@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------
+ Typography 
+------------*/
+/* Header footer */
+.header, .main1,.footer{
+    background-color: #1F2937;
+    color: white;
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    gap: 16px;
+}
+
+.logo{
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 900;
+}
+p.hero,a{
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1 .hero{
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+button, .main4{
+    background-color: #3882F6;
+    color :#F9FAF8;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.footer{
+    height: 72px;
+}
+
+/* main body */
+
+.main2 > h2{
+    font: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.info{
+    width: 150px;
+    margin: 16px;
+}
+.image{
+    border: #3882F6 solid;
+    border-radius: 8%;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+
+.main3{
+    background-color: #E5E7EB;
+    font: #1F2937;
+    font-size: 18px;
+}
+/*-----------
+ Layout 
+ -----------*/
+ body{
+    display: flex;
+    flex-direction: column;
+    background-color: auto;
+}
+ /* Navbar footer */
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    display: flex;
+}
+
+
+.footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main body */
+/* 
+.content{
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+} */
+
+
+.body{
+    border: red dotted;
+    display: flex;
+    justify-content: center;
+}
+
+.main1{
+    padding: 48px 0;
+}
+
+.picture{
+    border:green dotted;
+    background-color:#9babc0;
+}
+
+
+.main2{
+    border: green dotted;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+    align-items: center;
+}
+
+.main2 .container{
+    display:flex;
+    text-align: center;
+}
+
+.main3{
+    padding: 36px;
+}
+
+.main4{
+    justify-content: space-between;
+    padding: 36px;
+
+}
