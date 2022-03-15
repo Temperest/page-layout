@@ -28,6 +28,7 @@ p.hero,a{
     color: #E5E7EB;
     text-decoration: none;
     font-size: 18px;
+    margin: 8px;
 }
 
 h1 .hero{
@@ -35,8 +36,13 @@ h1 .hero{
     font-weight: bold;
     color: #F9FAF8;
 }
-button, .main4{
+
+h1{
+    margin: 8px;
+}
+button {
     background-color: #3882F6;
+    border: #F9FAF8 solid 2px;
     color :#F9FAF8;
     padding: 8px 16px;
     border-radius: 8px;
@@ -48,6 +54,12 @@ button, .main4{
 }
 
 /* main body */
+.picture{
+    /* border:green dotted; */
+    background-color:#9babc0;
+    width: 300px;
+    height: 200px;
+}
 
 .main2 > h2{
     font: #1F2937;
@@ -75,10 +87,15 @@ button, .main4{
     font: #1F2937;
     font-size: 18px;
 }
+
+.call h2,.call p{
+    font: #F9FAF8;
+}
 /*-----------
  Layout 
  -----------*/
  body{
+
     display: flex;
     flex-direction: column;
     background-color: auto;
@@ -86,7 +103,7 @@ button, .main4{
  /* Navbar footer */
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 ul{
@@ -102,32 +119,27 @@ ul{
 }
 
 /* main body */
-/* 
-.content{
-    display:flex;
-    flex-direction: column;
-    flex: 1;
-} */
-
 
 .body{
-    border: red dotted;
+    /* border: red dotted; */
     display: flex;
     justify-content: center;
 }
 
 .main1{
     padding: 48px 0;
+    /* gap: 16px; */
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-evenly;
 }
 
-.picture{
-    border:green dotted;
-    background-color:#9babc0;
-}
+
 
 
 .main2{
-    border: green dotted;
+    /* border: green dotted; */
+    flex: 1;
     display: flex;
     flex-direction: column;
     padding: 24px 0;
@@ -137,14 +149,32 @@ ul{
 .main2 .container{
     display:flex;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .main3{
     padding: 36px;
 }
 
+.quote{
+    width: 600px;
+    display:flex;
+    flex-direction: column;
+}
+.author{
+    font-weight: 900;
+    align-self: end;
+}
 .main4{
-    justify-content: space-between;
-    padding: 36px;
+    padding: 64px;
+    
+}
 
+.call{
+    max-width: 900px;
+    padding: 24px 48px;
+    background-color: #3882F6;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
 }
